@@ -14,6 +14,7 @@ Car::Car(const Car &v){
 	this->color 	= 	v.color;
 	this->speed 	= 	v.speed;
 	this->isStarted =	v.isStarted;
+
 }
 void Car::start(void){
 	setIsStarted(true);
@@ -22,7 +23,10 @@ void Car::start(void){
 void Car::accelerate (int v){}
 
 std::string Car::display(){
-	return std::to_string(getPower()) + "\n" + getColor() + "\n" +std::to_string(getSpeed()) + std::to_string(getIsStarted());
+	return 	std::to_string(getPower()) + "\n" 
+			+	getColor() + "\n" 
+			+	std::to_string(getSpeed()) + "\n" 
+			+	std::to_string(getIsStarted());
 }
 
 

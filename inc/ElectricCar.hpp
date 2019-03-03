@@ -1,21 +1,25 @@
 #ifndef ELECTRICCAR_HPP
 #define ELECTRICCAR_HPP
 
+
 #include "../inc/Car.hpp"
 
-class ElectricCar : public Car
-{
-private:
-	bool breaker;
+class ElectricCar : public Car{
+	private:
+		bool breaker;
 
-public:
-	ElectricCar();
-	ElectricCar(const ElectricCar &ve);
+	public:
+		ElectricCar();
+		ElectricCar(const ElectricCar &ve);
 
-	void start();
-	std::string display();
+		void start();
+		std::string display();
 
-	~ElectricCar();
+		bool getBreaker(){return this->breaker;};
+		void setBreaker(bool breaker){this->breaker = breaker;};
+
+
+		~ElectricCar();
 	
 };
 
