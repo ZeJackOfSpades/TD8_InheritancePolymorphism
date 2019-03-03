@@ -26,11 +26,12 @@ std::string ElectricCar::display(){
 }
 
 ElectricCar::ElectricCar(const ElectricCar& ve):Car(ve){
+	this->color		=	"white";
 	this->breaker	=	ve.breaker;
 }
 
 void ElectricCar::start(){
-	if(breaker == false){
+	if(getBreaker() == false){
 		Car::start();
 	}else{
 		std::cout<<"Breaker must be desactivated before start"<<std::endl;
