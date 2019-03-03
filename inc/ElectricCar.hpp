@@ -10,7 +10,7 @@ private:
 
 public:
 	ElectricCar();
-	ElectricCar(const ElectricCar& ve);
+	ElectricCar(const ElectricCar &ve);
 
 	void start();
 	std::string display();

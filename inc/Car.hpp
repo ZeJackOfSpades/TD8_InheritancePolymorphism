@@ -15,7 +15,7 @@ private:
 	bool isStarted;
 public:
 	Car();
-	Car(const Car& v);
+	Car(const Car &v);
 	void start();
 	std::string display();
 	void accelerate(int v);
