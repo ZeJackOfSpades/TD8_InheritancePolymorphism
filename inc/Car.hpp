@@ -8,7 +8,7 @@
 
 class Car
 {
-private:
+protected:
 	int power;
 	std::string color;
 	int speed;

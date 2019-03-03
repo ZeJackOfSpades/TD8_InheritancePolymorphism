@@ -7,18 +7,19 @@
 
 class PriorityCar : public Car
 {
-private:
+protected:
 	bool beacon;
 	int code;
 public:
 	PriorityCar(bool beacon, int code);
+	PriorityCar(const PriorityCar& v);
 	void startWithCode(int code);
 	
 
-	int getCode(){return this->code;};
-	bool getBeacon(){return this->beacon;};
-	void setCode(int code){this->code = code;};
-	void setBeacon(bool beacon){this->beacon = beacon;};
+	int getCode()				{return this->code;};
+	bool getBeacon()			{return this->beacon;};
+	void setCode(int code)		{this->code = code;};
+	void setBeacon(bool beacon)	{this->beacon = beacon;};
 
 	~PriorityCar();
 	

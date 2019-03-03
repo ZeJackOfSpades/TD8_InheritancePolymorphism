@@ -7,6 +7,10 @@ PriorityCar::PriorityCar(bool beacon, int code): Car(){
 
 void PriorityCar::startWithCode(int code){
 	if (code != getCode()){
-		
+
 	}
+}
+PriorityCar::PriorityCar(const PriorityCar& v): Car(v){
+	this->beacon 	=	v.beacon;
+	this->code		=	v.code;
 }

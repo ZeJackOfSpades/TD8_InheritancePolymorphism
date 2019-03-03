@@ -5,7 +5,7 @@
 #include "../inc/Car.hpp"
 
 class ElectricCar : public Car{
-	private:
+	protected:
 		bool breaker;
 
 	public:
@@ -15,8 +15,8 @@ class ElectricCar : public Car{
 		void start();
 		std::string display();
 
-		bool getBreaker(){return this->breaker;};
-		void setBreaker(bool breaker){this->breaker = breaker;};
+		bool getBreaker()				{return this->breaker;};
+		void setBreaker(bool breaker)	{this->breaker = breaker;};
 
 
 		~ElectricCar();
