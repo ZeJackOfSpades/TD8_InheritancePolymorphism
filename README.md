@@ -1,4 +1,4 @@
-# TD 8 Inheritance and polymorphism
+# TD 8 Inheritance and polymorphism [![Build Status](https://travis-ci.org/ZeJackOfSpades/TD8_InheritancePolymorphism.svg?branch=master)](https://travis-ci.org/ZeJackOfSpades/TD8_InheritancePolymorphism)
 This exercise is about Heritage and polymorphism
 
 # Class Inheritance
