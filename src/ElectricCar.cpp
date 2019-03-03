@@ -25,7 +25,7 @@ std::string ElectricCar::display(){
 
 }
 
-ElectricCar::ElectricCar(const ElectricCar &ve):Car(ve){
+ElectricCar::ElectricCar(const ElectricCar& ve):Car(ve){
 	this->breaker	=	ve.breaker;
 }
 

@@ -9,7 +9,7 @@
 */
 Car::Car(){}
 
-Car::Car(const Car &v){
+Car::Car(const Car& v){
 	this->power 	=	v.power;
 	this->color 	= 	v.color;
 	this->speed 	= 	v.speed;
