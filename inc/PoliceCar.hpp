@@ -7,8 +7,8 @@ class PoliceCar : public PriorityCar
 {
 public:
 	PoliceCar(int power, int code);
-	PoliceCar(Car v, int code);
-	
+	PoliceCar(const Car& v, int code);
+
 	std::string display();
 
 	~PoliceCar();

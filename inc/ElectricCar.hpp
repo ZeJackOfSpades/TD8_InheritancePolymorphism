@@ -7,10 +7,10 @@ class ElectricCar : public Car
 {
 private:
 	bool breaker;
-	
+
 public:
 	ElectricCar();
-	ElectricCar(ElectricCar ve);
+	ElectricCar(const ElectricCar& ve);
 
 	void start();
 	std::string display();

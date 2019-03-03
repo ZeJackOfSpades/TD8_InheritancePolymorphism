@@ -7,10 +7,12 @@ class Ambulance : public PriorityCar
 {
 public:
 	Ambulance(int power, int code);
-	Ambulance(Car v, int code);
+	Ambulance(const Car& v, int code);
 
 	std::string display();
 
 	~Ambulance();
 	
 };
+
+#endif
